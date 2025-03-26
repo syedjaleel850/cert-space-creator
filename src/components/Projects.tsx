@@ -22,8 +22,8 @@ const Projects: React.FC = () => {
       title: 'Netflix UI Clone',
       description: 'A fully responsive web application that adapts seamlessly across various devices.',
       year: '2024',
-      link: '#',
-      githubLink: '#',
+      link: 'https://syedjaleelclone.netlify.app/',
+      githubLink: 'https://github.com/syedjaleel850/Netflix.git',
       image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=1000',
       points: [
         'Responsive Web Design: Developed a fully responsive web application that adapts seamlessly across various devices.',

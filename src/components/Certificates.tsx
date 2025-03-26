@@ -16,19 +16,19 @@ const Certificates: React.FC = () => {
       title: 'Python Programming',
       issuer: 'Guvi',
       date: 'July 2023',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1fLBJJn-czS1qupO1bDMOfi8JZ-WKeS0w/view?usp=sharing',
     },
     {
       title: 'Introduction to Deep Learning in Python',
       issuer: 'DataCamp',
       date: 'February 2025',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1R2FaPLqKRrd1iw--Gc5yX4fbfipyWIHL/view?usp=sharing',
     },
     {
       title: 'The Web Development Bootcamp',
       issuer: 'Eudonix',
       date: 'January 2025',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1W2hGcP-WFrVUSeAbzpVmpDHd-k7OTuSe/view?usp=sharing',
     },
   ];
 

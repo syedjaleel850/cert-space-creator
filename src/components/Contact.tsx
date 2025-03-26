@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -59,11 +58,11 @@ const Contact: React.FC = () => {
               <div className="mt-8">
                 <h4 className="text-lg font-medium mb-4">Connect with me</h4>
                 <div className="flex items-center gap-4">
-                  <a href="https://www.linkedin.com/in/syedjaleel" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://www.linkedin.com/in/syed-jaleel-2b7878281/" target="_blank" rel="noopener noreferrer" 
                      className="p-3 bg-[#0A66C2]/10 text-[#0A66C2] rounded-lg hover:bg-[#0A66C2]/20 transition-colors">
                     <Linkedin size={24} />
                   </a>
-                  <a href="https://github.com/syedjaleel" target="_blank" rel="noopener noreferrer" 
+                  <a href="https://github.com/syedjaleel850" target="_blank" rel="noopener noreferrer" 
                      className="p-3 bg-gray-800/10 text-gray-800 rounded-lg hover:bg-gray-800/20 transition-colors">
                     <Github size={24} />
                   </a>
