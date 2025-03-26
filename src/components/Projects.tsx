@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       title: 'Smart Grocery List & Expiry Tracker',
       description: 'A full-stack web application for efficient grocery tracking with expiry alerts.',
       year: '2025',
-      link: '#',
+      link: 'https://grocery-minder-hero.netlify.app/',
       githubLink: '#',
       image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000',
       points: [
