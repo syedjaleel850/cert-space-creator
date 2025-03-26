@@ -1,0 +1,81 @@
+
+import React from 'react';
+import { Award, Calendar, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+interface Certificate {
+  title: string;
+  issuer: string;
+  date: string;
+  link?: string;
+}
+
+const Certificates: React.FC = () => {
+  const certificates: Certificate[] = [
+    {
+      title: 'Python Programming',
+      issuer: 'Guvi',
+      date: 'July 2023',
+      link: '#',
+    },
+    {
+      title: 'Introduction to Deep Learning in Python',
+      issuer: 'DataCamp',
+      date: 'February 2025',
+      link: '#',
+    },
+    {
+      title: 'The Web Development Bootcamp',
+      issuer: 'Eudonix',
+      date: 'January 2025',
+      link: '#',
+    },
+  ];
+
+  return (
+    <section id="certificates" className="py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="section-title">Certificates</h2>
+          <div className="w-20 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
+          <p className="section-subtitle">
+            Continuous learning and professional development credentials
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {certificates.map((cert, index) => (
+            <div
+              key={index}
+              className="p-6 rounded-xl bg-white shadow-sm border border-border/50 hover:border-primary/30 hover:shadow-md transition-all animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="mb-4 text-primary">
+                <Award size={32} />
+              </div>
+              
+              <h3 className="text-lg font-semibold mb-2">{cert.title}</h3>
+              <p className="text-muted-foreground mb-4">{cert.issuer}</p>
+              
+              <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+                <Calendar size={16} />
+                <span>{cert.date}</span>
+              </div>
+              
+              {cert.link && (
+                <Button variant="outline" size="sm" className="w-full flex items-center justify-center gap-1.5" asChild>
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                    View Certificate
+                    <ExternalLink size={14} />
+                  </a>
+                </Button>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Certificates;
