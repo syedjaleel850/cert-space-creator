@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowDown, ExternalLink, Linkedin, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero: React.FC = () => {
   return (
@@ -51,8 +52,15 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl overflow-hidden">
               <div className="absolute inset-0 blur-3xl opacity-30 bg-primary/30"></div>
               <div className="w-full h-full flex items-center justify-center">
-                <div className="w-60 h-60 sm:w-72 sm:h-72 bg-gradient-to-tr from-primary to-primary/60 rounded-full flex items-center justify-center text-white text-5xl sm:text-6xl font-bold animate-float shadow-xl">
-                  SJ
+                <div className="w-60 h-60 sm:w-72 sm:h-72 bg-gradient-to-tr from-primary to-primary/60 rounded-full flex items-center justify-center overflow-hidden shadow-xl animate-float">
+                  <Avatar className="w-full h-full">
+                    <AvatarImage 
+                      src="/lovable-uploads/81dc3ee6-915d-46de-b342-564ed06dde1a.png" 
+                      alt="Syed Jaleel" 
+                      className="object-cover"
+                    />
+                    <AvatarFallback className="text-white text-5xl sm:text-6xl font-bold">SJ</AvatarFallback>
+                  </Avatar>
                 </div>
               </div>
             </div>
