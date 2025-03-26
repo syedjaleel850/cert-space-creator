@@ -28,7 +28,7 @@ const Experience: React.FC = () => {
               </div>
               
               <Button variant="outline" size="sm" className="shrink-0 flex items-center gap-1.5" asChild>
-                <a href="#" className="flex items-center gap-1.5">
+                <a href="https://drive.google.com/file/d/1lnHzRTRs8iPOBvPW93tseaieK_uZWT5m/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5">
                   View Certificate
                   <ExternalLink size={16} />
                 </a>
