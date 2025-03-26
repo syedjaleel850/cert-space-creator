@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       description: 'A full-stack web application for efficient grocery tracking with expiry alerts.',
       year: '2025',
       link: 'https://grocery-minder-hero.netlify.app/',
-      githubLink: '#',
+      githubLink: 'https://github.com/syedjaleel850/grocery-minder-hero.git',
       image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000',
       points: [
         'Built a full-stack web application using React for efficient grocery tracking with expiry alerts.',
