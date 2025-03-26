@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { ArrowDown, ExternalLink, Linkedin, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-
 const Hero: React.FC = () => {
-  return (
-    <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
+  return <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
@@ -30,19 +27,13 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="flex items-center gap-4 pt-4">
-              <a href="https://www.linkedin.com/in/syedjaleel" target="_blank" rel="noopener noreferrer" 
-                className="p-2 text-muted-foreground hover:text-primary transition-colors" 
-                aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/syedjaleel" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:syedjaleel850@gmail.com" 
-                className="p-2 text-muted-foreground hover:text-primary transition-colors" 
-                aria-label="Email">
+              <a href="mailto:syedjaleel850@gmail.com" className="p-2 text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
                 <Mail size={20} />
               </a>
-              <a href="tel:7092199238" 
-                className="p-2 text-muted-foreground hover:text-primary transition-colors" 
-                aria-label="Phone">
+              <a href="tel:7092199238" className="p-2 text-muted-foreground hover:text-primary transition-colors" aria-label="Phone">
                 <Phone size={20} />
               </a>
             </div>
@@ -54,11 +45,7 @@ const Hero: React.FC = () => {
               <div className="w-full h-full flex items-center justify-center">
                 <div className="w-60 h-60 sm:w-72 sm:h-72 bg-gradient-to-tr from-primary to-primary/60 rounded-full flex items-center justify-center overflow-hidden shadow-xl animate-float">
                   <Avatar className="w-full h-full">
-                    <AvatarImage 
-                      src="/lovable-uploads/81dc3ee6-915d-46de-b342-564ed06dde1a.png" 
-                      alt="Syed Jaleel" 
-                      className="object-cover"
-                    />
+                    <AvatarImage alt="Syed Jaleel" className="object-fill" src="/lovable-uploads/561adbe7-aba8-4971-b2ed-d12d2536e5f1.png" />
                     <AvatarFallback className="text-white text-5xl sm:text-6xl font-bold">SJ</AvatarFallback>
                   </Avatar>
                 </div>
@@ -73,8 +60,6 @@ const Hero: React.FC = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
